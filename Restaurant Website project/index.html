@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#department">Departments</a>
+        <a href="#staff">Staff Management</a>
+        <a href="main.html">Log Out</a>
+    </div>
+    <br>
+    <br>
+    <center>
+
+    <div class="restaurant-container">
+        <div class="restaurant-name">
+          Oak  
+        
+        </div>
+    </div>
+    <form action="" class="form" id="loginForm">
+        <h1>ADMIN LOGIN</h1>
+        <input type="id" name="ID"  id="id" class="box" placeholder="Enter your ID">
+        <input type="password" name="Password" id="password" class="box" placeholder="Enter your Password">
+        <input type="submit" value="LOGIN" id="submit">
+    
+        
+        <br>
+        <br>
+        
+        <p style="color:white">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <br>
+        <br>
+      
+    </form>
+     </center>
+   
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+            
+            var id = document.getElementById('id').value;
+            var password = document.getElementById('password').value;
+            
+            // Check if ID and password are valid
+            if (id === 'admin10' && password === '12345') {
+                alert('Login successful!'); // Display success message
+            
+            } else {
+                alert('Invalid ID or password. Please try again.'); // Display error message
+            }
+        });
+    </script>
+     
+</body>
+
+</html>
